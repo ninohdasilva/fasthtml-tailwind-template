@@ -94,5 +94,5 @@ def get():
     return home()
 
 
-subprocess.run(["npx", "tailwindcss", "-i", "css/input.css", "-o", "css/output.css"])
+# subprocess.run(["npx", "tailwindcss", "-i", "css/input.css", "-o", "css/output.css"])
 serve()
