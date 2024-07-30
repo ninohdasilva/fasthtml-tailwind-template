@@ -76,7 +76,7 @@ def home_hero_section():
                 ),
                 cls="bg-blue-500 text-white text-2xl font-bold rounded-full px-4 py-2 hover:scale-105 hover:-translate-y-2 hover:bg-blue-300 transition-all",
             ),
-            href="https://google.fr",
+            href="https://github.com/ninohdasilva/fasthtml-tailwind-template",
         ),
         cls="home-hero-section flex flex-col items-center contents-center pt-8 gap-4",
     )
