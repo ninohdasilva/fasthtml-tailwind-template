@@ -18,10 +18,10 @@ Then, you need to install the python packages, using pip for example, with an ac
 pip install -r requirements.txt
 ```
 
-Finally, to execute:
+Finally, to execute (dev mode with Tailwind CLI build on save):
 
 ```bash
-python main.py
+python --tailwind True main.py
 ```
 
 Open [http://localhost:5001](http://localhost:5001) with your browser to see the result.
