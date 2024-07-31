@@ -1,3 +1,4 @@
+import argparse
 import subprocess
 
 from fasthtml.common import (
@@ -15,6 +16,18 @@ from fasthtml.common import (
     fast_app,
     serve,
 )
+
+parser = argparse.ArgumentParser(
+    prog="Fast HTML + Tailwind template",
+    description="FastHTML template using Tailwind CSS for styling",
+)
+parser.add_argument(
+    "--tailwind",
+    type=bool,
+    default=False,
+    help="Run the Tailwind CLI build or not",
+)
+args = parser.parse_args()
 
 hdrs = [
     Meta(charset="UTF-8"),
@@ -94,5 +107,8 @@ def get():
     return home()
 
 
-# subprocess.run(["npx", "tailwindcss", "-i", "css/input.css", "-o", "css/output.css"])
+if args.tailwind:
+    subprocess.run(
+        ["npx", "tailwindcss", "-i", "css/input.css", "-o", "css/output.css"]
+    )
 serve()
