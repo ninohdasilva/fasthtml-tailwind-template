@@ -28,7 +28,7 @@ hdrs = [
 ]
 
 # For now, fast_app and rt are necessary for Tailwind to work properly
-app, rt = fast_app(hdrs=hdrs, default_hdrs=False)
+app, rt = fast_app(hdrs=hdrs, default_hdrs=False, pico=False)
 
 
 def home_hero_section():
