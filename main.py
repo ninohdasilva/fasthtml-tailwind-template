@@ -1,21 +1,7 @@
 import argparse
 import subprocess
 
-from fasthtml.common import (
-    H1,
-    A,
-    Button,
-    Div,
-    Img,
-    Link,
-    Main,
-    Meta,
-    P,
-    Section,
-    Span,
-    fast_app,
-    serve,
-)
+from fasthtml.common import *
 
 parser = argparse.ArgumentParser(
     prog="Fast HTML + Tailwind template",
