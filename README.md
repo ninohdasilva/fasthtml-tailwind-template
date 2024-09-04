@@ -21,7 +21,7 @@ pip install -r requirements.txt
 Finally, to execute (dev mode with Tailwind CLI build on save):
 
 ```bash
-python --tailwind True main.py
+python main.py --tailwind True 
 ```
 
 Open [http://localhost:5001](http://localhost:5001) with your browser to see the result.
@@ -29,7 +29,7 @@ Open [http://localhost:5001](http://localhost:5001) with your browser to see the
 You can start editing the page by modifying `main.py`. For now, you will need to refresh the page to see the results after saving.
 
 ## Note
-`main.py` contains a subprocess call that calls the Tailwinc CLI build process after each file modification. 
+`main.py` contains a subprocess call that calls the Tailwind CLI build process after each file modification. 
 This is a hacky method to make Tailwind CSS work with FastHTML without using the CDN.
 Feel free to suggest a better solution for this, or any improvement, via a PR.
 I also used fast_app instead of FastHTML to make it work, inspired by the [code](https://github.com/tinloof/fasthtml) for the [FastHTML landing page](https://fastht.ml) by [Tinloof](https://tinloof.com/)
